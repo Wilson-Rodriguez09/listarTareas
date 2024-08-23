@@ -1,7 +1,7 @@
 from django.urls import path
 from.views import *
 
-urlpattern = [
+urlpatterns = [
     path('',listar,name='listar'),
     path('crear',crear,name='crear')
 ]
