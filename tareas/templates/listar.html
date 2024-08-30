@@ -9,25 +9,23 @@
 </head>
 <body>
 <div>
-
-        {% for tarea in tareas %}
-        <table class="table"></table>
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Titulo</th>
-              <th scope="col">Descripcion</th>
-              <th scope="col">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>{{tarea.titulo}}</td>
-              <td>{{tarea.descripcion}}</td>
-              <td>{{tarea.estado}}</td>
-            </tr>
+    {% for tarea in tareas %}
+    <table class="table"></table>
+        <thead>
           <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>{{tarea.titulo}}</td>
+            <td>{{tarea.descripcion}}</td>
+            <td>{{tarea.estado}}</td>
+          </tr>
         </tbody>
       </table>
       {% endfor %}
